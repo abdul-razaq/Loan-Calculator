@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__title">
+            Loan Calculator
+          </div>
+          <form class="form">
+            <div class="form__group">
+              <input
+                type="number"
+                id="amount"
+                placeholder="$ Loan Amount"
+                class="form__input"
+              />
+            </div>
+            <div class="form__group">
+              <input
+                type="number"
+                id="interest"
+                placeholder="% Interest"
+                class="form__input"
+              />
+            </div>
+            <div class="form__group">
+              <input
+                type="number"
+                id="years"
+                placeholder="Years To Repay"
+                class="form__input"
+              />
+            </div>
+            <div class="form__group">
+              <input type="submit" value="Calculate" class="btn--submit" />
+            </div>
+          </form>
+          <!-- LOADING IMAGE -->
+          <div class="loading">
+            <img src="img/loading.gif" alt="" />
+          </div>
+          <!-- RESULTS -->
+          <div id="results">
+            <h5 class="results__heading">Results</h5>
+            <div class="form__group">
+              <label class="form__label">Monthly Payment</label>
+              <input
+                type="number"
+                id="monthly-payment"
+                disabled
+                class="form__input"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Total Payment</label>
+              <input
+                type="number"
+                id="total-payment"
+                disabled
+                class="form__input"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Total Interest</label>
+              <input
+                type="number"
+                id="total-interest"
+                disabled
+                class="form__input"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

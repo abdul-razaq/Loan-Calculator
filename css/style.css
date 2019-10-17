@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 2rem;
+  color: #777;
+  background-color: #042220;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 4rem auto;
+  overflow-x: hidden;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 1.8rem;
+  box-shadow: 0 0.4rem 0.2rem #000;
+}
+
+.card__content {
+  margin: auto;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1c978f;
+  transition: transform 0.6s ease-in;
+}
+
+.card__title:hover {
+  transform: rotateY(180deg);
+}
+
+.form__group {
+  margin-top: 1.5rem;
+}
+
+.form__label {
+  color: #017a72;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form__input {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem 3rem;
+  outline: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 3rem;
+  transition: all 0.3s ease-in;
+  font-size: 1.6rem;
+  color: #087770;
+}
+
+.form__input:focus {
+  border: 1px solid #adadad;
+}
+
+.form__input:disabled {
+  background-color: #fff;
+  color: #087770;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.results__heading {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 200;
+  color: #087770;
+}
+
+.btn--submit {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #008d84;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: all 0.2s;
+  box-shadow: 0.2rem 0.2rem 0.4rem #000;
+  outline: none;
+}
+
+.btn--submit:active {
+  transform: translateY(0.4rem);
+  box-shadow: 0.1rem 0.1rem 0.2rem #000;
+  outline: none;
+}
+
+.btn--submit:hover {
+  background-color: #087770;
+}
+
+.alert--danger {
+  background: #f16e6e;
+  opacity: .5;
+  padding: .5rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: .8rem;
+  color: #000;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 4rem;
+  display: none;
+}
+
+#results {
+  display: none;
+}
